@@ -1,0 +1,48 @@
+Getting and Cleaning Data: Project
+==================================
+
+NOTE: Kindly understand the source data in order to make sense of the current analysis. 
+The "readMe.txt" has more information on this.
+
+The purpose of this project is to process the source data provided (from 
+"https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip")
+ and convert into a form that is tidy.
+
+An R script "run_analysis.R" has been created for this purpose.
+The following functions are performed by the script.
+
+1. Downloads, unzips and loads required data from "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip". 
+  	- The training data is stored in trainData object.
+  	- The testing data is stored in testData object.
+	- The column names are stored in the featureNames object.
+	- The activity names corresponding to each activity's number 
+	  is stored in activityNames object.
+
+2. Merges the training and the test sets to create one data set.
+	- The rbind function is used to merge both the data. 
+	- The merged data is stored in mergeDF.
+
+3. Extracts only the measurements on the mean and standard deviation for each measurement.
+	- The grep function is used to find all column names (stored 
+	  in featureNames object) containing "mean()" or "std()".
+	- The columns thus are stored in the reqDF object.
+	- NOTE: Kindly refer to "readMe.txt" to understand the 
+	  reasoning behind choosing "mean()" and not "mean".
+
+4. Uses descriptive activity names to name the activities in the data set.
+	- The factor function is used to descriptively label all 
+	  activities.
+	- Columns activity and subject, containing respective 
+	  information, is added to reqDF.
+
+5. Appropriately labels the data set with descriptive variable names.
+	- The names function is used to name the columns of the reqDF 
+	  data frame using character variables obatined from 
+	  featureNames.
+
+6. From the data set in step 5, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+	- The ddply function from the plyr package is used to perform 
+	  the required operation to get the tidy data set.
+	- The tidy data set is stored in the "tidyData.txt" file. 
+	- NOTE: Kindly refer to the "readMe.txt" so as to understand 
+	  how the current data fits the idea of tidy data.
