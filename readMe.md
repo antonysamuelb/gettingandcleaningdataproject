@@ -4,12 +4,10 @@
 ###Submitted by: Antony Samuel B 
 ####Date: Thursday, May 04, 2017	
 
-==================================
 The purpose of this assignment is to extract data from a source,
 process it and present it as a tidy data set.
 
 ####About the Source Data
-==================================
 
 The data was obtained from experiments conducted by Jogre L. Reyes-Ortiz, et. al from the Smartlab - Non Linear Complex Systems Laboratory, DITEN - University of Genova.
 
@@ -22,7 +20,6 @@ The experiments were carried out on 30 subjects. The subjects were randomly clas
 *"features.txt" contains the variable names of the data set that we obtain from "X_train.txt" and "X_test.txt".
 
 ####Data Processing
-==================================
 
 The data was obtained from the following link:
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
