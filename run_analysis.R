@@ -29,6 +29,8 @@ mergedDF <- rbind(testData , trainData)
 
 mactivity <- rbind(testactivity, trainactivity)$V1
 
+msubject <- rbind(testsubject, trainsubject)$V1
+
 
 # Task 2
 # Extract only the measurements on the mean and standard deviation 
@@ -43,7 +45,7 @@ reqDF <- mergedDF[,c(msnamesindex)]
 reqDF$activity <- factor(mactivity, levels = activityNames[,1],
                             labels = as.character( activityNames[,2]) )
                     
-reqDF$subject <- rbind(testsubject, trainsubject)$V1
+reqDF$subject <- msubject
 
 # Task 4
 # Appropriately labels the data set with descriptive variable names. 
