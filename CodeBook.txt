@@ -1,3 +1,4 @@
+==================================
 Getting and Cleaning Data: Project
 ==================================
 
@@ -46,3 +47,84 @@ The following functions are performed by the script.
 	- The tidy data set is stored in the "tidyData.txt" file. 
 	- NOTE: Kindly refer to the "readMe.txt" so as to understand 
 	  how the current data fits the idea of tidy data.
+
+==================================
+Variable Description of "tidyData.txt" 
+==================================
+
+"tidyData.txt" has 68 columns. Of these 66 are variables. The first 
+two column contains activity and subject labels servins as identifiers 
+for the data.
+
+The column names of the 66 variables are listed below. A "mean:" has been 
+added before each variable to indicate that they have been averaged.  For eg:
+the "mean: tBodyAcc-mean()-X" represents the mean of the time averaged 
+body acceleration parameter in the X-direction.
+
+column number	column name
+3	mean: tBodyAcc-mean()-X
+4	mean: tBodyAcc-mean()-Y
+5	mean: tBodyAcc-mean()-Z
+6	mean: tBodyAcc-std()-X
+7	mean: tBodyAcc-std()-Y
+8	mean: tBodyAcc-std()-Z
+9	mean: tGravityAcc-mean()-X
+10	mean: tGravityAcc-mean()-Y
+11	mean: tGravityAcc-mean()-Z
+12	mean: tGravityAcc-std()-X
+13	mean: tGravityAcc-std()-Y
+14	mean: tGravityAcc-std()-Z
+15	mean: tBodyAccJerk-mean()-X
+16	mean: tBodyAccJerk-mean()-Y
+17	mean: tBodyAccJerk-mean()-Z
+18	mean: tBodyAccJerk-std()-X
+19	mean: tBodyAccJerk-std()-Y
+20	mean: tBodyAccJerk-std()-Z
+21	mean: tBodyGyro-mean()-X
+22	mean: tBodyGyro-mean()-Y
+23	mean: tBodyGyro-mean()-Z
+24	mean: tBodyGyro-std()-X
+25	mean: tBodyGyro-std()-Y
+26	mean: tBodyGyro-std()-Z
+27	mean: tBodyGyroJerk-mean()-X
+28	mean: tBodyGyroJerk-mean()-Y
+29	mean: tBodyGyroJerk-mean()-Z
+30	mean: tBodyGyroJerk-std()-X
+31	mean: tBodyGyroJerk-std()-Y
+32	mean: tBodyGyroJerk-std()-Z
+33	mean: tBodyAccMag-mean()
+34	mean: tBodyAccMag-std()
+35	mean: tGravityAccMag-mean()
+36	mean: tGravityAccMag-std()
+37	mean: tBodyAccJerkMag-mean()
+38	mean: tBodyAccJerkMag-std()
+39	mean: tBodyGyroMag-mean()
+40	mean: tBodyGyroMag-std()
+41	mean: tBodyGyroJerkMag-mean()
+42	mean: tBodyGyroJerkMag-std()
+43	mean: fBodyAcc-mean()-X
+44	mean: fBodyAcc-mean()-Y
+45	mean: fBodyAcc-mean()-Z
+46	mean: fBodyAcc-std()-X
+47	mean: fBodyAcc-std()-Y
+48	mean: fBodyAcc-std()-Z
+49	mean: fBodyAccJerk-mean()-X
+50	mean: fBodyAccJerk-mean()-Y
+51	mean: fBodyAccJerk-mean()-Z
+52	mean: fBodyAccJerk-std()-X
+53	mean: fBodyAccJerk-std()-Y
+54	mean: fBodyAccJerk-std()-Z
+55	mean: fBodyGyro-mean()-X
+56	mean: fBodyGyro-mean()-Y
+57	mean: fBodyGyro-mean()-Z
+58	mean: fBodyGyro-std()-X
+59	mean: fBodyGyro-std()-Y
+60	mean: fBodyGyro-std()-Z
+61	mean: fBodyAccMag-mean()
+62	mean: fBodyAccMag-std()
+63	mean: fBodyBodyAccJerkMag-mean()
+64	mean: fBodyBodyAccJerkMag-std()
+65	mean: fBodyBodyGyroMag-mean()
+66	mean: fBodyBodyGyroMag-std()
+67	mean: fBodyBodyGyroJerkMag-mean()
+68	mean: fBodyBodyGyroJerkMag-std()

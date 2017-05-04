@@ -2,8 +2,6 @@
 
 rm(list = ls())
 
-setwd("F:\\1 Studies\\ML\\Coursera\\3 Getting and Cleaning data\\Project")
-
 # Download Zip Files and extract contents.
 
 download.file("https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip", 
@@ -76,5 +74,5 @@ newTable <- newTable[,c(67,68,1:66)]
 names(newTable)[3:68] <- paste("mean:", names(newTable[,3:68]))
 
 # write out the tidy data set.
-write.table(newTable, "tidyData.txt")
+write.table(newTable, "tidyData.txt", row.names = FALSE)
 
