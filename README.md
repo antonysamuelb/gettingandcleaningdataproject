@@ -48,7 +48,7 @@ The characteristics of tidy Data as summarised by  Jeff Leek in "The Elements of
 
 1. Each variable you measure should be in one column.
 2. Each different observation of that variable should be in a different row.
-3. There should be one table for each ìkindî of variable.
+3. There should be one table for each ‚Äúkind‚Äù of variable.
 4. If you have multiple tables, they should include a column in the table that allows them to be linked.
 
 By looking at the data in "tidyData.txt" we can see that it satisfies both conditions 1 and 2. The 3rd condition is subject to users opinion in this context. As each variable has one averaged value corresponding to each value of activity and subject, all the variables are clubbed together as being of the same kind. Hence only one table is required.
